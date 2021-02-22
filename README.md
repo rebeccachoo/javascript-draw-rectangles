@@ -5,7 +5,7 @@ The page will automatically draw rectangles per 3 seconds using setTimeout funct
 The canvas size is 1000w x 700h.
 The rectangle size is 50w x 50h.
 The initial speed for drawing is 3 seconds.
-You can change the speed faster or slower by substracting 5 seconds or adding 5 seconds.
+You can change the speed faster or slower by substracting 0.5 seconds or adding 0.5 seconds.
 
 | Feature | Description |
 | -----: | :----------- |
