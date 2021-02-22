@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script type="application/javascript">
+			let speed = 3000;
+
+			function add() {
+				let canvas = document.getElementById("canvas");
+				if (canvas.getContext) {
+					let ctx = canvas.getContext("2d");
+					const color = random_rgba();
+					let numW = Math.round(Math.floor(Math.random() * 800));
+					let numH = Math.round(Math.floor(Math.random() * 700));
+					ctx.fillStyle = color;
+					ctx.fillRect(numW, numH, 50, 50);
+				}
+				setTimeout(() => {
+					add();
+					console.log("settimeout " + speed);
+				}, speed);
+			}
+			function random_rgba() {
+				let o = Math.round;
+				let r = Math.random;
+				let s = 255;
+				return (
+					"rgba(" +
+					o(r() * s) +
+					"," +
+					o(r() * s) +
+					"," +
+					o(r() * s) +
+					"," +
+					r().toFixed(1) +
+					")"
+				);
+			}
+			setTimeout(() => {
+				add();
+			}, 100);
+			function faster() {
+				speed = speed - 500;
+			}
+			function slower() {
+				speed = speed + 500;
+			}
+			function crazy() {
+				speed = 0;
+			}
+		</script>
+	</head>
+	<body>
+		<button onClick="faster();">Faster</button>
+		<button onClick="slower();">Slower</button>
+		<button onClick="crazy();">Crazy</button>
+
+		<div id="canvasWapper">
+			<canvas id="canvas" width="1000" height="700"></canvas>
+		</div>
+	</body>
+</html>
