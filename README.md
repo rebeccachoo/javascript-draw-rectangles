@@ -1,6 +1,7 @@
 # Javascript - Draw Rentangles
 
 Javascript will draw rentangles and you can set the speed faster, slower, and crazy.
+The page will automatically draw rectangles per 3 seconds using setTimeout function.
 The canvas size is 1000w x 700h.
 The rectangle size is 50w x 50h.
 The initial speed for drawing is 3 seconds.
