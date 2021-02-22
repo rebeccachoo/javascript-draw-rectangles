@@ -1,12 +1,15 @@
 # Javascript - Draw Rentangles
 
 Javascript will draw rentangles and you can set the speed faster, slower, and crazy.
- 
+The canvas size is 1000w x 700h.
+The rectangle size is 50w x 50h.
+The initial speed for drawing is 3 seconds.
+You can change the speed faster or slower by substracting 5 seconds or adding 5 seconds.
 
 | Feature | Description |
 | -----: | :----------- |
-|  Image | <img src="https://github.com/rebeccachoo/javascript-draw-rectangles/blob/main/screenshot1.png?raw=true"  width="400">|
-|  Image | <img src="https://github.com/rebeccachoo/javascript-draw-rectangles/blob/main/screenshot2.png?raw=true"  width="400">|
+|  Slow Mode | <img src="https://github.com/rebeccachoo/javascript-draw-rectangles/blob/main/screenshot1.png?raw=true"  width="400">|
+|  Crazy Mode | <img src="https://github.com/rebeccachoo/javascript-draw-rectangles/blob/main/screenshot2.png?raw=true"  width="400">|
 
 ## Installation
 
